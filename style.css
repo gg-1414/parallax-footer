@@ -1,0 +1,41 @@
+/* These styles don't matter */
+* {
+  font-family: monospace, sans-serif; }
+
+body {
+  margin: 0; }
+
+h1 {
+  margin: 0;
+  font-weight: normal; }
+
+header, footer {
+  padding: 1rem; }
+
+header {
+  background: #6200EE;
+  color: white; }
+
+section {
+  min-height: 50vh; }
+  section:nth-child(1) {
+    background-color: #7d22ff; }
+  section:nth-child(2) {
+    background-color: #9b55ff; }
+  section:nth-child(3) {
+    background-color: #b988ff; }
+
+footer {
+  background: #ffd868;
+  min-height: 6rem; }
+
+/* Here's the styles that do matter for parallax */
+main, .placeholder {
+  z-index: 10;
+  position: relative; }
+
+footer {
+  position: fixed;
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
