@@ -33,6 +33,10 @@ section {
   section:nth-child(3) {
     background-color: #b988ff; }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 footer {
   background: #202040;
   color: white;
@@ -44,6 +48,7 @@ footer {
 .jump-to-page {
   margin: 2rem auto 1rem; }
 
+/* ---------- */
 /* Here's the styles that do matter for parallax */
 header, main, .placeholder {
   position: relative; }
@@ -58,5 +63,7 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 5; }
+
+/* ---------- */
 
 /*# sourceMappingURL=style.css.map */

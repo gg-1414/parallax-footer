@@ -29,8 +29,10 @@ section.active {
 }
 
 footer {
-  display: grid; 
-  grid-gap: 1rem;
+  .container {
+    display: grid; 
+    grid-gap: 2rem;
+  }
 
   p, a {
     opacity: .6;
@@ -108,7 +110,7 @@ input {
 
 @media (min-width: 700px) {
   footer {
-    padding: 2rem;
+    padding: 3rem;
   } 
 
   .footer-top {
@@ -135,5 +137,21 @@ input {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .container {
+    grid-template-areas: 
+      "top top"
+      "links subscribe"
+      "social social"
+      "jump-to jump-to";
+    
+    .footer-top { grid-area: top; }
+    .footer-subscribe { grid-area: subscribe; }
+    .footer-links-wrapper { grid-area: links; }
+    .social { grid-area: social; }
+    .jump-to-page { grid-area: jump-to; }
   }
 }

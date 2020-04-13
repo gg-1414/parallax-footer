@@ -18,11 +18,11 @@ SVG Icons - svgicons.sparkk.fr
 section.active {
   opacity: .7; }
 
-footer {
+footer .container {
   display: grid;
-  grid-gap: 1rem; }
-  footer p, footer a {
-    opacity: .6; }
+  grid-gap: 2rem; }
+footer p, footer a {
+  opacity: .6; }
 
 .darth-vader {
   width: 7rem;
@@ -78,7 +78,7 @@ input {
     background: #ffd868; } }
 @media (min-width: 700px) {
   footer {
-    padding: 2rem; }
+    padding: 3rem; }
 
   .footer-top {
     display: grid;
@@ -98,5 +98,18 @@ input {
     position: fixed;
     bottom: 2rem;
     right: 2rem; } }
+@media (min-width: 1200px) {
+  footer .container {
+    grid-template-areas: "top top" "links subscribe" "social social" "jump-to jump-to"; }
+    footer .container .footer-top {
+      grid-area: top; }
+    footer .container .footer-subscribe {
+      grid-area: subscribe; }
+    footer .container .footer-links-wrapper {
+      grid-area: links; }
+    footer .container .social {
+      grid-area: social; }
+    footer .container .jump-to-page {
+      grid-area: jump-to; } }
 
 /*# sourceMappingURL=tall-footer.css.map */
