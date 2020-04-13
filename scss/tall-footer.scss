@@ -24,10 +24,6 @@ SVG Icons - svgicons.sparkk.fr
 
 /* ---------- */
 
-section.active {
-  opacity: .7;
-}
-
 footer {
   .container {
     display: grid; 
@@ -85,26 +81,9 @@ input {
   }
 }
 
-#sneak-peak {
-  z-index: 30;
-  background: $secondary;
-  padding: .5rem;
-  box-shadow: 0px 2px 6px $primary;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 @media (max-width: 699px) {
   .footer-top {
     text-align: center;
-  }
-
-  #sneak-peak {
-    position: sticky;
-    top: 1rem;
-    right: 1rem;
-    background: $secondary;
   }
 }
 
@@ -131,12 +110,6 @@ input {
 
   .footer-links-wrapper {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  #sneak-peak {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
   }
 }
 

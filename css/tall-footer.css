@@ -15,9 +15,6 @@ SVG Icons - svgicons.sparkk.fr
   stroke-width: 1; }
 
 /* ---------- */
-section.active {
-  opacity: .7; }
-
 footer .container {
   display: grid;
   grid-gap: 2rem; }
@@ -58,24 +55,9 @@ input {
 .jump-to-page a {
   opacity: 1; }
 
-#sneak-peak {
-  z-index: 30;
-  background: #ffd868;
-  padding: .5rem;
-  box-shadow: 0px 2px 6px #6200EE;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer; }
-
 @media (max-width: 699px) {
   .footer-top {
-    text-align: center; }
-
-  #sneak-peak {
-    position: sticky;
-    top: 1rem;
-    right: 1rem;
-    background: #ffd868; } }
+    text-align: center; } }
 @media (min-width: 700px) {
   footer {
     padding: 3rem; }
@@ -92,12 +74,7 @@ input {
       grid-area: text; }
 
   .footer-links-wrapper {
-    grid-template-columns: repeat(4, 1fr); }
-
-  #sneak-peak {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem; } }
+    grid-template-columns: repeat(4, 1fr); } }
 @media (min-width: 1200px) {
   footer .container {
     grid-template-areas: "top top" "links subscribe" "social social" "jump-to jump-to"; }
