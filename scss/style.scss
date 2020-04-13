@@ -1,0 +1,81 @@
+/* These styles don't matter */
+$primary: #6200EE;
+$primary-dark: #202040;
+$secondary: #ffd868;
+
+.text-red {
+  color: red;
+}
+
+* {
+  font-family: monospace, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+header, footer { 
+  padding: 1rem; 
+}
+
+header {
+  background: $primary;
+  color: white;
+}
+
+section {
+  min-height: 50vh;
+  // opacity: 0.6;
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      background-color: lighten($primary, $i * 10%);
+    }
+  }
+}
+
+footer {
+  background: $primary-dark;
+  color: white;
+  min-height: 6rem;
+  width: 100vw;
+
+  a { 
+    color: $secondary;
+  }
+}
+
+.jump-to-page {
+  margin: 2rem auto 1rem;
+}
+
+/* Here's the styles that do matter for parallax */
+header, main, .placeholder {
+  position: relative; 
+}
+
+header, main { 
+  z-index: 10; 
+}
+
+.placeholder {
+  z-index: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+}

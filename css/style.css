@@ -1,13 +1,21 @@
 /* These styles don't matter */
+.text-red {
+  color: red; }
+
 * {
-  font-family: monospace, sans-serif; }
+  font-family: monospace, sans-serif;
+  box-sizing: border-box; }
 
 body {
   margin: 0; }
 
-h1 {
+h2 {
   margin: 0;
   font-weight: normal; }
+
+p {
+  opacity: 0.7;
+  font-weight: 300; }
 
 header, footer {
   padding: 1rem; }
@@ -26,16 +34,29 @@ section {
     background-color: #b988ff; }
 
 footer {
-  background: #ffd868;
-  min-height: 6rem; }
+  background: #202040;
+  color: white;
+  min-height: 6rem;
+  width: 100vw; }
+  footer a {
+    color: #ffd868; }
+
+.jump-to-page {
+  margin: 2rem auto 1rem; }
 
 /* Here's the styles that do matter for parallax */
-main, .placeholder {
-  z-index: 10;
+header, main, .placeholder {
   position: relative; }
+
+header, main {
+  z-index: 10; }
+
+.placeholder {
+  z-index: 1; }
 
 footer {
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 5; }
 
 /*# sourceMappingURL=style.css.map */
